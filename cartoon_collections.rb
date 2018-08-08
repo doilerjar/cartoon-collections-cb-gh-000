@@ -2,10 +2,12 @@ require 'pry'
 
 def roll_call_dwarves(array)
   # Your code here
+  i = 0 
   result = []
-  array.each_with_index do |item, index|
-    result << "#{index+1}. #{yield(array[i])}"
+  while i < array.length do 
+    result << yield(array[i])
   end
+  binding.pry
   result
 end
 
