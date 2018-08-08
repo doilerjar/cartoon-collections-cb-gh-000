@@ -2,18 +2,11 @@ require 'pry'
 
 def roll_call_dwarves(array)
   # Your code here
-  i = 0 
   result = []
-  while i < array.length 
-    result << yield(array[i])
-    i += 1 
+  arry.each_with_index do |item, index|
+    result << "#{index+1}. #{item}"
   end
-  binding.pry 
-  result2 = []
-  result.each_with_index do |item, index|
-    result2 << "#{index+1}. #{item}"
-  end
-  result2
+  result
 end
 
 def summon_captain_planet# code an argument here
