@@ -3,9 +3,10 @@ require 'pry'
 def roll_call_dwarves(array)
   # Your code here
   result = []
-  arry.each_with_index do |item, index|
+  array.each_with_index do |item, index|
     result << "#{index+1}. #{item}"
   end
+  binding.pry 
   result
 end
 
