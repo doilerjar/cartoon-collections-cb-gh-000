@@ -24,5 +24,5 @@ def find_the_cheese# code an argument here
   cheese_types = ["cheddar", "gouda", "camembert"]
 end
 
-# input = ["Hi", "Bye", "Misty"]
-# roll_call_dwarves(input) {|item| puts "#{item}"}
+input = ["Hi", "Bye", "Misty"]
+roll_call_dwarves(input) {|item| puts "#{item}"}
